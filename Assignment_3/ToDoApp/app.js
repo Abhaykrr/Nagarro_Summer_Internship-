@@ -30,6 +30,10 @@ function addTask() {
 
                     let current_tasks = document.querySelectorAll('.delete');
 
+                    // current_tasks[current_tasks.length-1].onclick= function(){  // will not work if the sequence of delete is changed
+                    //     this.parentElement.remove();
+                    // }
+
                     for (let i = 0; i < current_tasks.length; i++) {
                         current_tasks[i].onclick = function () {
                             this.parentNode.remove();
@@ -37,6 +41,11 @@ function addTask() {
                     }
 
                     let tasks = document.querySelectorAll('.task');
+                      
+                    // tasks[tasks.length-1].onclick =function () {   // will not work if the sequence of delete is changed
+                    //    this.classList.toggle('completed');
+                    // }
+
                     for (let i = 0; i < tasks.length; i++) {
                         tasks[i].onclick = function () {
                             this.classList.toggle('completed');

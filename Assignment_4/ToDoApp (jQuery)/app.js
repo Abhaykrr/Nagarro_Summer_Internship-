@@ -7,7 +7,7 @@
         }, 1000);
         return false;
      }
-    $('ul').append('<li>' + content + '<button class="check"><i class="fa fa-check"></i> </button> <button class="delete"><i class="fa fa-times"></i> </button>  </li>')
+    $('ul').append('<li> <p>' + content + '</p>  <button class="check"><i class="fa fa-check"></i> </button> <button class="delete"><i class="fa fa-times"></i> </button> </li>')
     $('input').val('');
 }
 

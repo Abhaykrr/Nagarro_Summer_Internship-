@@ -18,21 +18,23 @@ function addTask() {
                 document.querySelector(".todo").innerHTML
                 += `<li class="task">
 
-
+                    <p>
                      ${document.querySelector('input').value}
+                     </p>
                    
+                            <button class="check">
+                            <i class="fa fa-check"></i>
+                            </button> 
+
                             <button class="delete">
                             <i class="fa fa-times"></i>
                             </button> 
-                     
 
+                           
                     </li > `;
 
                     let current_tasks = document.querySelectorAll('.delete');
 
-                    // current_tasks[current_tasks.length-1].onclick= function(){  // will not work if the sequence of delete is changed
-                    //     this.parentElement.remove();
-                    // }
 
                     for (let i = 0; i < current_tasks.length; i++) {
                         current_tasks[i].onclick = function () {
@@ -40,15 +42,12 @@ function addTask() {
                         }
                     }
 
-                    let tasks = document.querySelectorAll('.task');
-                      
-                    // tasks[tasks.length-1].onclick =function () {   // will not work if the sequence of delete is changed
-                    //    this.classList.toggle('completed');
-                    // }
+                    let tasks = document.querySelectorAll('.check');
+                  
 
                     for (let i = 0; i < tasks.length; i++) {
                         tasks[i].onclick = function () {
-                            this.classList.toggle('completed');
+                            this.parentElement.classList.toggle('completed');
                         }
                     }
 

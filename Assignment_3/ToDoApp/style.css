@@ -38,6 +38,7 @@ body{
     box-shadow: 0px 5px 10px rgb(106, 94, 94) ;
     opacity: 0.9;
     background: linear-gradient(to right, #df736a, #c7623d); 
+    overflow: auto;
 }
 
 input{
@@ -95,10 +96,13 @@ li{
 
 .completed{
     text-decoration: line-through;
-    background-color: white;
     color: black;
 }
 
 h1{
     text-align: center;
+}
+
+p{
+    width: 95%;
 }

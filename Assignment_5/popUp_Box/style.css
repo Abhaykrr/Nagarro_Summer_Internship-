@@ -1,5 +1,5 @@
 #box{
-    background-color: bisque;
+    background-color:#FA8072;
     height: 350px;
     width: 700px;
     visibility: hidden;
@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: aqua ;
+    background-color: #FFA07A ;
 }
 
 #box.show{
@@ -18,7 +18,7 @@ body{
     outline: none;
     border: none;
     color: black;
-    background-color: bisque;
+    background-color: #FA8072;
     font-size: 20px;
     margin-right: 5px;
     margin-top: 5px;
@@ -27,7 +27,7 @@ body{
 
 #cross:hover{
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 
 #bt1{

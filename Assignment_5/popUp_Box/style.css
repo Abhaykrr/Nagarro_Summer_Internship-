@@ -1,0 +1,39 @@
+#box{
+    background-color: bisque;
+    height: 350px;
+    width: 700px;
+    visibility: hidden;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+}
+
+body{
+    background-color: aqua ;
+}
+
+#box.show{
+    visibility: visible;
+}
+#cross{
+    outline: none;
+    border: none;
+    color: black;
+    background-color: bisque;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+    align-items: flex-end;
+}
+
+#cross:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#bt1{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+

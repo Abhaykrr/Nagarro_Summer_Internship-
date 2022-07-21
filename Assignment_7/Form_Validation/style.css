@@ -1,0 +1,35 @@
+span{
+    position: absolute;
+    margin-left: 0.75rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #f29de3, #ff91b2, #ff9f6b, #ffc519, #a8eb12); background-size: cover;     
+    background-repeat: no-repeat  ;
+}
+
+input[type=text]{
+    opacity: 0.5;
+    padding-left: 3rem;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    display: flex;
+    padding: 10px 10px;
+    /* background-color: rgb(85, 225, 225); */
+    border-radius: 10px;
+    /* height: 500px; */
+}

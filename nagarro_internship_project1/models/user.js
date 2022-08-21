@@ -23,7 +23,11 @@ const userScheama = new mongoose.Schema({
     profilePic:{
         type:String,
         default:'/images/profilePic.jpeg'
-    }
+    },
+    likes:[{
+        type: mongoose.Schema.Types.ObjectId,    //changes
+        ref:'Post',
+    }]
 
 });
 userScheama.plugin(passportLocalMongoose); // takes care of undefined schema objects

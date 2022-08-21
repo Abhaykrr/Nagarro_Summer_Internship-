@@ -40,13 +40,26 @@ input{
   text-align: center;
 }
 
-#submit{
+#si{
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-#cross{
+#sig{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#submit{
+  border: none;
+  background-color: #0f1419;
+  color: white;
+  font-size: 20px;
+}
+
+#cross, #signcross{
   color: white;
   margin: 5px 5px;
   text-decoration: none;

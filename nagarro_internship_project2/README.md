@@ -53,3 +53,50 @@ Default Admin Credentials :
 
 username : admin
 password : admin
+
+
+
+Screenshots:-
+
+Login Page
+
+![signin](https://user-images.githubusercontent.com/70810172/186411081-2c39c1d7-5c81-4dbd-809e-4c71ab5db830.png)
+
+SignUp Page
+![signup](https://user-images.githubusercontent.com/70810172/186411113-0059602e-ec0b-40bc-b1b1-a8f6e60e3088.png)
+
+Home Page
+![home](https://user-images.githubusercontent.com/70810172/186410701-e5563135-1519-4716-b2cb-b15bc245379d.png)
+
+Product Description 
+![productdesc](https://user-images.githubusercontent.com/70810172/186411140-4fb35e2a-c5f2-482b-9381-50e1945f7648.png)
+
+
+Product Review 
+![productreview](https://user-images.githubusercontent.com/70810172/186411154-8beb9a6d-d08c-4727-bb57-8b15f7d46dae.png)
+
+
+
+User Cart
+![cart](https://user-images.githubusercontent.com/70810172/186411164-b40d4c96-e8a4-44e9-9713-83f09bf0cb18.png)
+
+
+
+Payment
+![payment](https://user-images.githubusercontent.com/70810172/186411167-5da174c8-a1df-4f7b-8f38-1317649ec28a.png)
+
+
+AdminPanel
+![adminhome](https://user-images.githubusercontent.com/70810172/186411180-32495bc3-737c-4f02-abe8-0a303833dac0.png)
+
+
+
+Admin Products
+![adminallproduts](https://user-images.githubusercontent.com/70810172/186411191-4eed795b-c793-484e-9ea6-9752f758c461.png)
+
+
+Admin Users
+![adminuserspanel](https://user-images.githubusercontent.com/70810172/186411200-f2ff34ae-ac8f-4d7e-96bd-c2e35fd7432f.png)
+
+
+

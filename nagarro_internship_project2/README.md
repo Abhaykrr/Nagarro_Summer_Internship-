@@ -10,7 +10,7 @@ NodeJs
 MongoDb
 
 
-To run it locally on you machine you need to have a mongodb url,google auth key,razorpay key .If you have that , then clone/fork this repo and place all the key and mongo url in a .env file with respective key id as mentioned in the code
+To run it locally on you machine you need to have a mongodb url, stripe auth key .If you have that , then clone/fork this repo and place all the key and mongo url in a .env file with respective key id as mentioned in the code
 
 
 Open Terminal and write >
@@ -22,7 +22,7 @@ Navigate to localhost:3000 or the mentioned port .
 Features :
 Both Local login and Signup Authentication
 
-stripe Pay Payment Gateway Integration
+Stripe Pay Payment Gateway Integration
 
 Uploading of File type Image as jpeg/png format.
 

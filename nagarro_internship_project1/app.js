@@ -100,5 +100,5 @@ const PORT = process.env.PORT || 3000;
   
 
 server.listen(PORT,()=>{
-    console.log("Server connected");
+    console.log(`Server connected to ${PORT}`);
 });

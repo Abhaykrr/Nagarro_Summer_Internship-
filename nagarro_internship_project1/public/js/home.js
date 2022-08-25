@@ -15,7 +15,9 @@ $(document).ready(function(){
            for(let curr of comm.data){
             const timestamp = timeDifference(new Date(), new Date(curr.createdAt));
             const bottomComments = ` <div style=" background-color: #F5F5F5;" class="box__img">
-            <div class="img"></div>
+            <div class="img">
+            <img  style=" height:50px; width=50px; border-radius: 40px;"src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"></img>
+            </div>
             <div class="tweet">
                 <div class="user__info--tweet">
                     <h4>${curr.postedBy}</h4>
@@ -78,7 +80,7 @@ $(document).ready(function(){
         const displayUName = postedBy.username +" " +timestamp;
         
 
-        return '<div class="box__img" data-id='+ postData._id+'> <div class="img">  </div><div class="tweet"><div class="user__info--tweet"><h4> <a href="/profile/'+ postedBy.username +'">'+ displayName + '</a></h4><small>&nbsp @'+ displayUName + '</small></div><p>'+ content+'</p></div> <div class="postFooter"><div class="postButtonContainer"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-comment"></i></button></div><div class="postButtonContainer green"><button class="retweet"><i class="fas fa-retweet"></i></button></div><div class="postButtonContainer red"><button class="likeButton"><i class="far fa-heart"></i> <span>' + postData.likes.length +'</span> </button></div></div>  <form id="f1" action="/addcomment/'+ postData._id +'/'+ postedBy.username+'" method="POST"><input type="text" name="content" id="coo" placeholder="Add comment" ><button type="submit">Add comment</button></form> </div>';
+        return '<div class="box__img" data-id='+ postData._id+'> <div class="img"> <img  style=" height:50px; width=50px; border-radius: 40px;"src="https://uybor.uz/borless/uybor/img/user-images/user_no_photo_600x600.png"></img> </div><div class="tweet"><div class="user__info--tweet"><h4> <a href="/profile/'+ postedBy.username +'">'+ displayName + '</a></h4><small>&nbsp @'+ displayUName + '</small></div><p>'+ content+'</p></div> <div class="postFooter"><div class="postButtonContainer"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-comment"></i></button></div><div class="postButtonContainer green"><button class="retweet"><i class="fas fa-retweet"></i></button></div><div class="postButtonContainer red"><button class="likeButton"><i class="far fa-heart"></i> <span>' + postData.likes.length +'</span> </button></div></div>  <form id="f1" action="/addcomment/'+ postData._id +'/'+ postedBy.username+'" method="POST"><input type="text" name="content" id="coo" placeholder="Add comment" ><button type="submit">Add comment</button></form> </div>';
           
     }
     

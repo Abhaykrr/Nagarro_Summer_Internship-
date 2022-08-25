@@ -9,7 +9,8 @@ async function loadMsgs(){
         const timestamp = timeDifference(new Date(), new Date(msg.createdAt));
         $('#center__area').append(
             ` <div class="box__img">
-                    <div class="img"></div>
+                    <div class="img">
+                    <img  style=" height:50px; width=50px; border-radius: 40px;"src="https://uybor.uz/borless/uybor/img/user-images/user_no_photo_600x600.png"></img></div>
                     <div class="tweet">
                         <div class="user__info--tweet">
                             <h4>${msg.user}</h4>

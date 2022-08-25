@@ -6,7 +6,7 @@ const flash =  require('connect-flash');
 const router = express.Router();
 
 router.get('/home', isLoggedIn,(req,res)=>{
-     res.render('home');
+     res.render('home',{uname:req.user.firstName});
 });
 
 router.post('/register',async (req,res)=>{

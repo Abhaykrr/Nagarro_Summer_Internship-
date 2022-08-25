@@ -22,3 +22,20 @@ twitter clone - https://abhaykumar-twitter-app.herokuapp.com/ <br />
 => MongoDB<br />
 => HTML, CSS, JavaScript and jQuery<br />
 => EJS<br />
+
+Screenshot 
+
+Authorization 
+![auth](https://user-images.githubusercontent.com/70810172/186718136-e5abc036-f186-47ec-a332-dd2bb57c93fb.png)
+
+Home
+![Home](https://user-images.githubusercontent.com/70810172/186718228-70cd0790-7cab-4f9b-8e03-7af1731c9a71.png)
+
+Profile
+![Profile](https://user-images.githubusercontent.com/70810172/186718295-8414ca67-224b-4fea-b592-f7cbe1065ea6.png)
+
+Chat
+![Chats](https://user-images.githubusercontent.com/70810172/186718344-f5d01150-1bc7-4be1-915e-c691218a3298.png)
+
+
+

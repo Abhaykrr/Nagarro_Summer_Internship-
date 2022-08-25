@@ -1,5 +1,5 @@
 # nagarro_internship_project1
-This project was developed during the summer internship at Nagarro Software
+This project was developed during the summer internship at Nagarro Software <br />
 
 twitter clone - https://abhaykumar-twitter-app.herokuapp.com/
 

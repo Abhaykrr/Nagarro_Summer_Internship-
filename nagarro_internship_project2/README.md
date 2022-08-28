@@ -1,64 +1,64 @@
-ShopKnow @AbhayKumar abhay80413@gmail.com
-An E-commerce application built with CRUD functionality, and REST architechture.
+ShopKnow @AbhayKumar abhay80413@gmail.com<br />
+An E-commerce application built with CRUD functionality, and REST architechture.<br />
 
-Deployed at https://abhaykumar-ecommerce.herokuapp.com/
+Deployed at https://abhaykumar-ecommerce.herokuapp.com/<br />
 
-Tech Stack :-
-EJS
-Express
-NodeJs
-MongoDb
-
-
-To run it locally on you machine you need to have a mongodb url, stripe auth key .If you have that , then clone/fork this repo and place all the key and mongo url in a .env file with respective key id as mentioned in the code
+Tech Stack :-<br />
+EJS<br />
+Express<br />
+NodeJs<br />
+MongoDb<br />
 
 
-Open Terminal and write >
-npm  install
-After installation completes >
-npm start
-Navigate to localhost:3000 or the mentioned port .
-
-Features :
-Both Local login and Signup Authentication
-
-Stripe Pay Payment Gateway Integration
-
-Uploading of File type Image as jpeg/png format.
+To run it locally on you machine you need to have a mongodb url, stripe auth key .If you have that , then clone/fork this repo and place all the key and mongo url in a .env file with respective key id as mentioned in the code<br />
 
 
-Functionalities :
+Open Terminal and write ><br />
+npm  install<br />
+After installation completes ><br />
+npm start<br />
+Navigate to localhost:3000 or the mentioned port .<br />
 
-Products :
-Adding a new product
-Editing an existing Product
-Delete an Existing Products
+Features :<br />
+Both Local login and Signup Authentication<br />
 
-User :
-Register a New User with or without a profile picture
-Login/LogOut as an user
-Review a product and edit or delete that review only
-Add a item to cart / view carts Page
-Place an Order and make payment with success / failure.
-View Orders placed by the user.
+Stripe Pay Payment Gateway Integration<br />
 
-Admin :
-Access the Admin panel to get control over , Products, Orders and User.
-View, Update or Delete all products
-View all the Users Info along with Cart Information and Orders Information
-View all the order information placed throughout the website.
-The Admin Dashboard can only be accessed as an Admin user
-
-Default Admin Credentials :
-
-username : admin
-password : admin
+Uploading of File type Image as jpeg/png format.<br />
 
 
+Functionalities :<br />
 
-Screenshots:-
+Products :<br />
+Adding a new product<br />
+Editing an existing Product<br />
+Delete an Existing Products<br />
 
-Login Page
+User :<br />
+Register a New User with or without a profile picture<br />
+Login/LogOut as an user<br />
+Review a product and edit or delete that review only<br />
+Add a item to cart / view carts Page<br />
+Place an Order and make payment with success / failure.<br />
+View Orders placed by the user.<br />
+
+Admin :<br />
+Access the Admin panel to get control over , Products, Orders and User.<br />
+View, Update or Delete all products<br />
+View all the Users Info along with Cart Information and Orders Information<br />
+View all the order information placed throughout the website.<br />
+The Admin Dashboard can only be accessed as an Admin user<br />
+
+Default Admin Credentials :<br />
+
+username : admin<br />
+password : admin<br />
+
+
+
+Screenshots:-<br />
+
+Login Page<br />
 
 ![signin](https://user-images.githubusercontent.com/70810172/186411081-2c39c1d7-5c81-4dbd-809e-4c71ab5db830.png)
 

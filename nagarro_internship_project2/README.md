@@ -94,7 +94,8 @@ AdminPanel
 
 
 Admin Products
-![adminallproduts](https://user-images.githubusercontent.com/70810172/186411191-4eed795b-c793-484e-9ea6-9752f758c461.png)
+![adminprodcts](https://user-images.githubusercontent.com/70810172/187069215-3100e954-47ed-45e6-8c0b-8b787b86c82d.png)
+
 
 
 Admin Users

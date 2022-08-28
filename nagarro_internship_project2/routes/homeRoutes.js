@@ -8,16 +8,16 @@ router.get('/202' ,(req,res)=>{
    res.send("working");
 });
 
-router.get('/orders',(req,res)=>{
+router.get('/orders',isLoggedIn,(req,res)=>{
    res.render('orders');
 })
 
-router.get('/products' ,async (req,res)=>{
+router.get('/products' ,isLoggedIn,async (req,res)=>{
    const products = await Product.find();
    res.json(products);
 });
 
-router.get('/product/:id' ,async (req,res)=>{
+router.get('/product/:id' ,isLoggedIn,async (req,res)=>{
    const productId = req.params.id;
    // const currproduct = await Product.find({"_id" :productId});
    const currproduct = await Product.findOne({_id:productId});
@@ -34,7 +34,7 @@ router.get('/product/:id' ,async (req,res)=>{
 });
 
 
-router.post('/product/review/:id', async (req,res)=>{
+router.post('/product/review/:id', isLoggedIn,async (req,res)=>{
    const productId = req.params.id;
    console.log(req.body);
    try {
@@ -58,7 +58,7 @@ router.post('/product/review/:id', async (req,res)=>{
 
 });
 
-router.get('/product/review/:id', async (req,res) =>{
+router.get('/product/review/:id',isLoggedIn, async (req,res) =>{
    const productIdd = req.params.id;
    const currproduct = await Product.findOne({_id:productIdd}).populate('reviews');
    res.json(currproduct);
@@ -69,12 +69,12 @@ router.get('/product/review/:id', async (req,res) =>{
 
 // _______________________________Category___________________________________________________________________
 
-router.get('/home/:category',async(req,res)=>{
+router.get('/home/:category',isLoggedIn,async(req,res)=>{
    const cat = req.params.category;
    res.render('category',{cat});
 });
 
-router.get('/home/category/:category', async (req,res)=>{
+router.get('/home/category/:category',isLoggedIn, async (req,res)=>{
    const cat = req.params.category;
    const products = await Product.find({category:cat});
    res.json(products);

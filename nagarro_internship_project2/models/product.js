@@ -22,9 +22,19 @@ const productSchema =new mongoose.Schema({
         trim:true,
         required:true
     },
+    category:{
+        type:String,
+        trim:true,
+        required:true
+    },
     reviews:[
         {
             content:{
+                type:String,
+                trim:true,
+            },
+
+            star:{
                 type:String,
                 trim:true,
             },

@@ -53,11 +53,16 @@ $(document).ready(function(){
                         </div>
                         
                         <div class="d-flex flex-column mt-4">
-                          <button type="button" class="btn btn-danger"><a href="/product/del/${product._id}">Delete</a></button>
-                          <button class="btn btn-success btn-sm mt-2" type="button">
-                          <a href="/product/edit/${product._id}">Edit</a>
-                          </button> <br>
-                          <button class="btn btn-light btn-sm" type="button"><a href="/product/${product._id}">View More</a></button>
+                        <!-- <button type="button" class="btn btn-danger"><a href="/product/del/${product._id}">Delete</a></button>-->
+                        <!-- <button class="btn btn-success btn-sm mt-2" type="button">-->
+                        <!-- <a href="/product/edit/${product._id}">Edit</a>-->
+                        <!-- </button> <br>-->
+                        <!-- <button class="btn btn-light btn-sm" type="button"><a href="/product/${product._id}">View More</a></button>-->
+
+                        <a style="padding: 5px 40px" href="/product/del/${product._id}"><button style="padding: 5px 70px" type="button" class="btn btn-danger">Delete</button></a>
+                        <a style="padding: 5px 40px" href="/product/edit/${product._id}"><button style="padding: 5px 80px" type="button" class="btn btn-success">Edit</button></a>
+                        <a style="padding: 5px 40px" href="/product/${product._id}"><button style="padding: 5px 78px" type="button" class="btn btn-warning">View </button></a>
+                      
                         </div>
                       </div>
                     </div>

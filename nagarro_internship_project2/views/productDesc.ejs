@@ -42,8 +42,26 @@
             <form action="/product/review/<%= payload.product._id %>" method="POST">
                 
                 <div class="form-outline mb-4">
-                <input  name="content" type="text" id="form2Example1" class="form-control" />
-                <label class="form-label" for="form2Example1">Add Review </label>
+                <input  name="content" type="text" id="form2Example1" class="form-control" placeholder="Add a review" />
+                <br>
+                <div class="range">
+                  <!-- <span>Rating </span> -->
+                  <fieldset class="starability-grow">
+                    
+                    <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                    <input type="radio" id="first-rate1" name="rating" value="1" />
+                    <label for="first-rate1" title="Terrible">1 star</label>
+                    <input type="radio" id="first-rate2" name="rating" value="2" />
+                    <label for="first-rate2" title="Not good">2 stars</label>
+                    <input type="radio" id="first-rate3" name="rating" value="3" />
+                    <label for="first-rate3" title="Average">3 stars</label>
+                    <input type="radio" id="first-rate4" name="rating" value="4" />
+                    <label for="first-rate4" title="Very good">4 stars</label>
+                    <input type="radio" id="first-rate5" name="rating" value="5" />
+                    <label for="first-rate5" title="Amazing">5 stars</label>
+                  </fieldset>
+                </div>
+                <label class="form-label" for="form2Example1">Give Ratings </label>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mb-4">Add </button>
             

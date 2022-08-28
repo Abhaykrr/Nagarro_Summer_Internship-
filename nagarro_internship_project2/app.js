@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -19,13 +20,26 @@ const PublishableKey = 'pk_test_51LaF5WSAeBTv5HPlXFw5Vwh7OT4vwreYu2P9bUgNJnHv0hX
 const SecretKey = 'sk_test_51LaF5WSAeBTv5HPl0RQ5Nwi7Blj77vFlVUSdUwRSWMyeFAoFeGEKw5RhQ9aMnLJdCLxEafkvtCIcijhKtVLNvobt00Misv845m';
 const stripe = require('stripe')(SecretKey);
 
-mongoose.connect('mongodb://localhost:27017/shopknow')
-.then(()=>{
-    console.log("DB connected");
-})
-.catch((err)=>{
+// mongoose.connect('mongodb://localhost:27017/shopknow')
+// .then(()=>{
+//     console.log("DB connected");
+// })
+// .catch((err)=>{
+//     console.log(err);
+// })
+
+mongoose
+  .connect(process.env.DATABASE, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("Database is connected");
+  })
+  .catch((err) => {
+    console.log("Data Base Error...");
     console.log(err);
-})
+  });
 
 app.set('view engine','ejs');
 app.set('views' ,path.join(__dirname,'/views'));
@@ -98,7 +112,9 @@ app.use(userRoutes);
 //     res.render('notfound');
 // });
 
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000,()=>{
-    console.log("Server connected");
+
+app.listen(PORT,()=>{
+    console.log(`Server connected to ${PORT} `);
 });

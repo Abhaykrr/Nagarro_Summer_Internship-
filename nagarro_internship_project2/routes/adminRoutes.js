@@ -26,6 +26,7 @@ router.post('/admin/products/addProduct', isAdmin , isLoggedIn , async (req,res)
             price: req.body.price,
             img: req.body.img,
             desc: req.body.desc,
+            category:req.body.category,
         }
 
         const newProduct = await Product.create(product);
@@ -70,7 +71,7 @@ router.post('/admin/products/addProduct', isAdmin , isLoggedIn , async (req,res)
                 price:req.body.price,
                 img:req.body.img,
                 desc:req.body.desc,
-
+                category:req.body.category,
             }
            
       });

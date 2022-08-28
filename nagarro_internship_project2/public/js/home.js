@@ -18,6 +18,37 @@ $(document).ready(function(){
     getProducts();
 
 
+
+    const searchInput = document.querySelector("[data-search]");
+    searchInput.addEventListener("input",(e)=>{
+        const value =e.target.value;
+        // getProducts();
+        console.log(value);
+
+        let cards = document.querySelectorAll('.card');
+         console.log(cards);
+
+        for(let card of cards){
+            let curr = card.querySelector('.title');
+
+             let textval = curr.innerText;
+             textval=textval.toLowerCase();
+            
+            console.log(textval);
+
+            if(textval.indexOf(value)>-1){
+                
+            }else{
+                card.remove();
+            }
+        }
+
+        if(value==""){
+            getProducts();
+        }
+    })
+
+
    
 
 

@@ -8,6 +8,10 @@ router.get('/202' ,(req,res)=>{
    res.send("working");
 });
 
+router.get('/orders',(req,res)=>{
+   res.render('orders');
+})
+
 router.get('/products' ,async (req,res)=>{
    const products = await Product.find();
    res.json(products);
@@ -39,7 +43,9 @@ router.post('/product/review/:id', async (req,res)=>{
             $push :{
                reviews:{
                   content:req.body.content,
-                  postedBy:req.user.username
+                  postedBy:req.user.username,
+                  star:req.body.rating,
+
                }
             }
       });
@@ -58,7 +64,22 @@ router.get('/product/review/:id', async (req,res) =>{
    res.json(currproduct);
    // console.log(currproduct);
    
-})
+});
+
+
+// _______________________________Category___________________________________________________________________
+
+router.get('/home/:category',async(req,res)=>{
+   const cat = req.params.category;
+   res.render('category',{cat});
+});
+
+router.get('/home/category/:category', async (req,res)=>{
+   const cat = req.params.category;
+   const products = await Product.find({category:cat});
+   res.json(products);
+
+});
 
 
 

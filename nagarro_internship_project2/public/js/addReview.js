@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+
     console.log(productId);
 
     async function getReviews(){
@@ -19,6 +22,10 @@ $(document).ready(function(){
 
 
     function createHtml(data){
+
+      var star = data.star;
+      if (typeof(star) == "undefined")
+       star="0";
         return `<div class="card mb-3">
         <div class="card-body">
           <div class="d-flex flex-start">
@@ -30,6 +37,7 @@ $(document).ready(function(){
                 <h6 class="text-primary fw-bold mb-0">
                  ${data.postedBy}
                   <span class="text-dark ms-2">${data.content}</span>
+                  <span class="text-dark ms-2">${star} <i class="fas fa-star"></i></span>
                 </h6>
                 <p class="mb-0">1-5 days ago</p>
               </div>

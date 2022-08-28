@@ -66,14 +66,15 @@ SignUp Page
 ![signup](https://user-images.githubusercontent.com/70810172/186411113-0059602e-ec0b-40bc-b1b1-a8f6e60e3088.png)
 
 Home Page
-![home](https://user-images.githubusercontent.com/70810172/186410701-e5563135-1519-4716-b2cb-b15bc245379d.png)
+![home](https://user-images.githubusercontent.com/70810172/187069159-8e54f3ef-24e8-4cda-929d-606e2ecf2cea.png)
 
 Product Description 
 ![productdesc](https://user-images.githubusercontent.com/70810172/186411140-4fb35e2a-c5f2-482b-9381-50e1945f7648.png)
 
 
 Product Review 
-![productreview](https://user-images.githubusercontent.com/70810172/186411154-8beb9a6d-d08c-4727-bb57-8b15f7d46dae.png)
+![review](https://user-images.githubusercontent.com/70810172/187069167-e96a7eb9-8a93-4c2d-bab6-28c9ace0bd6f.png)
+
 
 
 
@@ -87,7 +88,8 @@ Payment
 
 
 AdminPanel
-![adminhome](https://user-images.githubusercontent.com/70810172/186411180-32495bc3-737c-4f02-abe8-0a303833dac0.png)
+![adminHome](https://user-images.githubusercontent.com/70810172/187069171-3aaf2d8a-43c8-4862-888c-d31acdff8631.png)
+
 
 
 

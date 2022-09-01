@@ -1,6 +1,7 @@
 const express = require('express');
 const passport = require('passport');
 const User = require('../models/user');
+const Order = require('../models/order');
 const {isLoggedIn,isAdmin} = require('../middleware');
 const flash =  require('connect-flash');
 const router = express.Router();
@@ -37,6 +38,7 @@ router.post('/register',async (req,res)=>{
             }
 
                 const newUser = await User.register(user,req.body.password);
+                const temp =  await Order.create({userid:req.body.username});
                 // res.send(newUser);
                 res.redirect('/login');
     } catch (error) {

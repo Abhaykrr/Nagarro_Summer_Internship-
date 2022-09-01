@@ -1,32 +1,20 @@
 $(document).ready(function(){
 
-    console.log('cart');
+    console.log("order page");
+   
+    async function loadOrders(){
+        const orders = await axios.get('/getorders');
+        const list = orders.data;
+        // console.log(list[0].productid);
 
-    async function loadcart(){
-
-      var cartData = [
-       
-       
-
-      ];
-        
-      
-
-        const carts = await axios.get('/getcart');
-        const list = carts.data.cart;
         $('#cart').empty();
-        var total=0;  
+        var total=0; 
 
-        for(let curr of list){
-            const proid = curr.pid;
-            const product = await axios.get(`/getproductdetail/${proid}`);
-            console.log(proid);
+        for(let curr of list[0].productid){
+            const product = await axios.get(`/getproductdetail/${curr}`);
+            // console.log(product);
+
             total+=parseInt(`${product.data[0].price}`);
-
-           
-            cartData.push(proid);
-            
-
 
             const large = `<div class="row">
             <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
@@ -44,12 +32,12 @@ $(document).ready(function(){
             <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
               <!-- Data -->
               <p><strong>${product.data[0].productName}</strong></p>
-              <p>Price:&nbsp ${product.data[0].price}</p>
+              <p>Price:&nbsp${product.data[0].price}</p>
               <p></p>
-              <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                title="Remove item">
-                <i class="fas fa-trash"></i>
-              </button>
+              <!--  <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"-->
+              <!--  title="Remove item">-->
+              <!--  <i class="fas fa-trash"></i>-->
+              <!-- </button>-->
               
               <!-- Data -->
             </div>
@@ -79,14 +67,12 @@ $(document).ready(function(){
           $('#cart').prepend(large);
 
         }
-       
-        console.log(total);
-        console.log(cartData[1]);
+
 
         const summary = `<div class="col-md-4">
         <div class="card mb-4">
           <div class="card-header py-3">
-            <h5 class="mb-0">Summary</h5>
+            <h5 class="mb-0">Order Summary</h5>
           </div>
           <div class="card-body">
             <ul class="list-group list-group-flush">
@@ -102,7 +88,7 @@ $(document).ready(function(){
               <li
                 class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                 <div>
-                  <strong>Total amount</strong>
+                  <strong>Total amount paid</strong>
                   <strong>
                     <p class="mb-0">(including VAT)</p>
                   </strong>
@@ -111,28 +97,13 @@ $(document).ready(function(){
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">
-            <h3>Welcome to Payment Gateway</h3>
-            <form action="/payment/${total*100}/${cartData}/${uid}" method="POST">
-            <script
-                src="//checkout.stripe.com/v2/checkout.js"
-                class="stripe-button"
-                data-key="pk_test_51LaF5WSAeBTv5HPlXFw5Vwh7OT4vwreYu2P9bUgNJnHv0hXBEa5KNLzhLEmRTw45scOi8BVWzc0cBtNXUhpYqcVW00qAHeQIbV"
-                data-amount="${total*100}"
-                data-currency="usd"
-                data-name="Payment to Abhay Kumar"
-                data-description="Cart items"
-                data-locale="auto" >
-                </script>
-            </form>
-            </button>
-
-           
           </div>
         </div>
       </div>`;
-      
       $('#summ').append(summary);
+        console.log(total);
     }
-    loadcart();
+
+    loadOrders();
+
 });

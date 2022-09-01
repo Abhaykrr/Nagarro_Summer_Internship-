@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     const searchInput = document.querySelector("[data-search]");
     searchInput.addEventListener("input",(e)=>{
-        const value =e.target.value;
+        let value =e.target.value;  
         // getProducts();
         console.log(value);
 
@@ -33,6 +33,7 @@ $(document).ready(function(){
 
              let textval = curr.innerText;
              textval=textval.toLowerCase();
+             value=value.toLowerCase();
             
             console.log(textval);
 

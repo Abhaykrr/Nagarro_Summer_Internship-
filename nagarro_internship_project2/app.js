@@ -13,6 +13,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 const localStrategy = require('passport-local');
 const User = require('./models/user');
+const Order = require('./models/order');
 const flash = require('connect-flash');
 const app = express();
 
@@ -53,9 +54,24 @@ app.use(bodyParser.json());
 
 // ________Payment__________________________________________________________
 
-app.post('/payment/:amount', function(req, res){
+app.post('/payment/:amount/:cartData/:uid',  async function(req, res){
     const amount = req.params.amount;
- 
+
+    const uid = req.params.uid;
+    // ________________________________________
+    const cartitems = req.params.cartData;
+    const array = cartitems.split(",");
+    
+          for(let curr of array){
+            const rev = await Order.updateOne({userid:uid},{
+              $push :{
+                productid: curr,
+              }
+        });
+          }
+          
+    // ________________________________________
+    res.redirect('/orders');
     stripe.customers.create({
         email: req.body.stripeEmail,
         source: req.body.stripeToken,
@@ -67,9 +83,10 @@ app.post('/payment/:amount', function(req, res){
             state: 'BIHAR',
             country: 'India',
         }
-    })
-    .then((customer) => {
- 
+    }) 
+    .then(async (customer) => {
+        // console.log(req.params.cartData);
+
         return stripe.charges.create({
             amount: amount,    
             description: 'Cart  Product',

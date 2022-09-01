@@ -82,6 +82,11 @@ User Cart
 ![cart](https://user-images.githubusercontent.com/70810172/186411164-b40d4c96-e8a4-44e9-9713-83f09bf0cb18.png)
 
 
+User Orders
+![myorders](https://user-images.githubusercontent.com/70810172/187992241-c3b04d93-e2de-4ccf-bb57-451da4a1a0c9.png)
+
+
+
 
 Payment
 ![payment](https://user-images.githubusercontent.com/70810172/186411167-5da174c8-a1df-4f7b-8f38-1317649ec28a.png)

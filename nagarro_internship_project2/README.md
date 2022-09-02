@@ -1,6 +1,5 @@
 Project Videos drive link :- <br/>
-https://drive.google.com/drive/folders/1Tl8a0Xj3RUr9NsuvlPNsoojmpe
-Pr8pME?usp=sharing
+https://drive.google.com/drive/folders/1Tl8a0Xj3RUr9NsuvlPNsoojmpePr8pME?usp=sharing
 
 ShopKnow @AbhayKumar abhay80413@gmail.com<br />
 An E-commerce application built with CRUD functionality, and REST architechture.<br />

@@ -4,14 +4,16 @@ Ecommerce website - https://abhaykumar-ecommerce.herokuapp.com/
 
 Twitter clone - https://abhaykumar-twitter-app.herokuapp.com/
 
-Image Slider (Hosted) https://abhaykrr.github.io/Nagarro-Image-Slider/
+Image Slider -  (Hosted) https://abhaykrr.github.io/Nagarro-Image-Slider/
 
-Copy to Clipboard (Hosted) https://abhaykrr.github.io/Nagarro-Copy-To-Clipboard/
+Copy to Clipboard -  (Hosted) https://abhaykrr.github.io/Nagarro-Copy-To-Clipboard/
 
-Form Validation (Hosted Link) https://abhaykrr.github.io/Nagarro-Form-Validation/
+Form Validation - (Hosted Link) https://abhaykrr.github.io/Nagarro-Form-Validation/
 
-Calculator (jQuery) (Hosted Link) https://abhaykrr.github.io/Nagarro-calc-jQuery-/
+Calculator - (jQuery) (Hosted Link) https://abhaykrr.github.io/Nagarro-calc-jQuery-/
 
-Todo (jQuery) (Hosted Link) https://abhaykrr.github.io/Nagarro-Todo-jQuery/
+Todo - https://abhaykrr.github.io/Nagarro-Assignment-ToDo/
 
-Popup Box (Hosted Link 15/07/22) https://abhaykrr.github.io/Nagarro-Ass-PopUp/
+Todo - (jQuery) (Hosted Link) https://abhaykrr.github.io/Nagarro-Todo-jQuery/
+
+Popup Box - (Hosted Link 15/07/22) https://abhaykrr.github.io/Nagarro-Ass-PopUp/
